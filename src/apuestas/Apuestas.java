@@ -1,11 +1,15 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * @author Roberto Lopez Ramirez
  */
 package apuestas;
 
 public class Apuestas {
 
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Apuesta laApuesta;
         int mi_dinero;
@@ -15,6 +19,10 @@ public class Apuestas {
         System.out.println("El dinero que tengo tras las apuestas es " + mi_dinero);
     }
 
+    /**
+     * 
+     * @return el objeto Apuesta
+     */
     private static Apuesta operativa_Apuesta() {
         Apuesta laApuesta;
         laApuesta = new Apuesta(1000, 4, 2);

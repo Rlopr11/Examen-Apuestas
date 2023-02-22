@@ -4,7 +4,6 @@
  */
 package apuestas;
 
-
 public class Apuestas {
 
     public static void main(String[] args) {
@@ -28,5 +27,5 @@ public class Apuestas {
         mi_dinero = miApuesta.getDinero_disp();
         System.out.println("El dinero que tengo tras las apuestas es " + mi_dinero);
     }
-    
+
 }

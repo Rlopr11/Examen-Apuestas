@@ -4,7 +4,6 @@
  */
 package apuestas;
 
-
 public class Apuesta {
 
     private int dinero_disp;
@@ -12,30 +11,32 @@ public class Apuesta {
     private int goles_visitante;
     private int apostado;
 
-    /*Contructor por defecto*/
+    /* Contructor por defecto */
     public Apuesta() {
     }
 
-    /*Contructor por parámetros*/
+    /* Contructor por parámetros */
     public Apuesta(int dinero_disp, int goles_local, int goles_visitante) {
         this.dinero_disp = dinero_disp;
         this.goles_local = goles_local;
         this.goles_visitante = goles_visitante;
         this.apostado = 0;
     }
-    /*Método para obtener el valor del atributo dinero_disp*/
+    /* Método para obtener el valor del atributo dinero_disp */
 
     public int getDinero_disp() {
         return dinero_disp;
     }
-    /*Método para modificar el valor del atributo dinero_disp*/
+    /* Método para modificar el valor del atributo dinero_disp */
 
     public void setDinero_disp(int dinero_disp) {
         this.dinero_disp = dinero_disp;
     }
 
-    /*Método para apostar.
-     * Permite elegir la cantidad a apostar, no pudiendo ser inferior a 1 ni superior a tu saldo disponible
+    /*
+     * Método para apostar.
+     * Permite elegir la cantidad a apostar, no pudiendo ser inferior a 1 ni
+     * superior a tu saldo disponible
      * Este método será probado con JUnit
      */
     public void apostar(int dinero) throws Exception {
@@ -51,8 +52,10 @@ public class Apuesta {
             apostado = dinero;
         }
     }
-    /*Método que comprueba si se ha acertado el resultado del partido
-     * En caso de que lo haya acertado devuelve true. Chequea que no se metan menos de 0 goles
+    /*
+     * Método que comprueba si se ha acertado el resultado del partido
+     * En caso de que lo haya acertado devuelve true. Chequea que no se metan menos
+     * de 0 goles
      * 
      */
 
@@ -67,8 +70,10 @@ public class Apuesta {
         }
         return acertado;
     }
-    /* Método para cobrar la apuesta.
-     * Comprueba que se acertó el resultado y, en ese caso, añade el valor apostado multiplicado por 10
+    /*
+     * Método para cobrar la apuesta.
+     * Comprueba que se acertó el resultado y, en ese caso, añade el valor apostado
+     * multiplicado por 10
      * al saldo disponible
      * Este método se va a probar con Junit
      */

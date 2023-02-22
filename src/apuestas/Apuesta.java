@@ -22,6 +22,15 @@ public class Apuesta {
         this.goles_visitante = goles_visitante;
         this.apostado = 0;
     }
+
+    public int getApostado() {
+        return apostado;
+    }
+
+    public void setApostado(int apostado) {
+        this.apostado = apostado;
+    }
+
     /* Método para obtener el valor del atributo dinero_disp */
 
     public int getDinero_disp() {

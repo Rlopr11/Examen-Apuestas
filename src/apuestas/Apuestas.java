@@ -10,6 +10,13 @@ public class Apuestas {
         Apuesta laApuesta;
         int mi_dinero;
 
+        laApuesta = operativa_Apuesta();
+        mi_dinero = laApuesta.getDinero_disp();
+        System.out.println("El dinero que tengo tras las apuestas es " + mi_dinero);
+    }
+
+    private static Apuesta operativa_Apuesta() {
+        Apuesta laApuesta;
         laApuesta = new Apuesta(1000, 4, 2);
         try {
             System.out.println("Apostando...");
@@ -24,8 +31,7 @@ public class Apuestas {
         } catch (Exception e) {
             System.out.println("Fallo al cobrar la apuesta");
         }
-        mi_dinero = laApuesta.getDinero_disp();
-        System.out.println("El dinero que tengo tras las apuestas es " + mi_dinero);
+        return laApuesta;
     }
 
 }
